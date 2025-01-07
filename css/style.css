@@ -1,0 +1,257 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+body {
+  background: rgb(91, 190, 220);
+  background: linear-gradient(90deg, rgba(91, 190, 220, 1) 0%, rgba(55, 123, 187, 1) 50%, rgba(1, 23, 137, 1) 100%);
+}
+
+main {
+  max-width: 1200px;
+  margin: auto;
+}
+
+p {
+  font-family: "Roboto Slab", serif;
+  color: white;
+  font-size: 15px;
+  text-align: justify;
+  margin: 0px 40px 50px 40px;
+}
+
+h2 {
+  font-family: "Palanquin Dark", serif;
+  color: white;
+  font-size: 25px;
+  margin: 80px 0 0 40px;
+}
+
+.titel {
+  font-size: 8vw;
+}
+
+h3 {
+  font-family: "Palanquin Dark", serif;
+  color: white;
+  font-size: 2.5vw;
+  margin-top: 2px;
+  padding: 0 5px 40px 10px;
+  text-shadow: 1px 0 rgba(0, 0, 0, 0.4), -1px 0 rgba(0, 0, 0, 0.4), 0 1px rgba(0, 0, 0, 0.4), 0 -1px rgba(0, 0, 0, 0.4), 1px 1px rgba(0, 0, 0, 0.4), -1px -1px rgba(0, 0, 0, 0.4), 1px -1px rgba(0, 0, 0, 0.4), -1px 1px rgba(0, 0, 0, 0.4);
+}
+
+.tematal h1 {
+  font-family: "Palanquin Dark", serif;
+  color: white;
+  font-size: 18vw;
+  margin-top: -20px;
+  padding: 0 0 0 15px;
+}
+
+.linksf img {
+  width: 35px;
+  height: auto;
+}
+
+.linksf {
+  display: flex;
+  margin-left: 50px;
+  gap: 42px;
+  margin-bottom: 100px;
+  max-width: 400px;
+}
+
+footer {
+  margin-top: 50px;
+}
+
+hr {
+  color: white;
+  margin-bottom: 50px;
+}
+
+/* menu */
+header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  padding-left: 25px;
+  border-bottom: white solid 2px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+  background: rgb(91, 190, 220);
+  background: linear-gradient(90deg, rgba(91, 190, 220, 1) 0%, rgba(55, 123, 187, 1) 50%, rgba(1, 23, 137, 1) 100%);
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  margin-right: 20px;
+}
+
+.menu li:last-child {
+  margin-right: 0;
+}
+
+.menu a {
+  display: block;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+  text-align: end;
+}
+
+.menu a:hover {
+  color: #81c0fe;
+}
+/* slut menu */
+
+.menu {
+  font-family: "Palanquin Dark", serif;
+  color: white;
+  font-size: 35px;
+}
+
+/* burgermenu */
+
+header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: transparent;
+  /* box-shadow: 0 10px 10px white(0, 0, 0, 0.1); */
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 5px;
+  /* border: white solid 2px; */
+}
+
+.menu li {
+  margin-right: 20px;
+}
+
+.menu li:last-child {
+  margin-right: 0;
+}
+
+.menu a {
+  display: block;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+  text-align: end;
+}
+
+.menu a:hover {
+  color: #81c0fe;
+}
+
+.burger {
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.burger .line {
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  margin-bottom: 5px;
+  transition: 0.2s linear;
+}
+.burger {
+  display: none;
+}
+@media screen and (max-width: 800px) {
+  .menu {
+    display: none;
+  }
+  .burger {
+    display: block;
+  }
+  .burger.active .line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+    transition: 0.2s linear;
+  }
+
+  .burger.active .line:nth-child(2) {
+    opacity: 0;
+    transition: 0.15s linear;
+  }
+
+  .burger.active .line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+    transition: 0.2s linear;
+  }
+
+  nav.active .menu {
+    display: block;
+    /* background: rgb(91, 190, 220); */
+    background: linear-gradient(90deg, rgba(55, 123, 187, 1) -100%, rgba(1, 23, 137, 1) 0%, rgba(91, 190, 220, 1) 100%);
+    position: absolute;
+    top: 94px;
+    left: 0;
+    width: 100%;
+    /* box-shadow: 0 10px 10px white(0, 0, 0, 0.1); */
+    z-index: 1;
+  }
+
+  nav.active .menu li {
+    margin: 10px 20px;
+    border: white solid 2px;
+    border-radius: 10px;
+  }
+
+  nav.active .menu a {
+    font-size: 24px;
+  }
+
+  .menu a:hover {
+    color: #051a80;
+  }
+}
