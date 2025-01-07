@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.forsidelayout p {
+  padding-top: 25px;
+  text-align: left;
+  /* max-width: 400px; */
+}
+
+.forsidelayout {
+  display: grid;
+  place-self: center;
+}
+
+.teksten p {
+  font-size: 14px;
+}
+
+/* billeder bag teskt */
+
+.grid_b img {
+  width: 100px;
+  height: 100px;
+  opacity: 60%;
+  border-radius: 20px;
+}
+
+.grid_b {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 10px 10% 10px -5%;
+  max-width: 400px;
+  max-height: 400px;
+  place-self: center;
+}
+
+.grid_bild {
+  grid-row: 1/2;
+  grid-column: 1/2;
+}
+
+.grid_images {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 15px;
+  margin: 50px;
+}
+
+.grid_images img {
+  border: 2px solid white;
+}
+
+#rundtekst {
+  grid-column: 1 /2;
+  grid-row: 1/2;
+  place-self: center;
+  z-index: 95;
+}
+
+/* billede bag tekst størrelser*/
+
+#fimg1 {
+  width: 110px;
+  height: 90px;
+  justify-self: end;
+  align-self: end;
+}
+
+#fimg2 {
+  width: 110px;
+  height: 110px;
+  justify-self: end;
+  align-self: end;
+}
+
+#fimg3 {
+  width: 80px;
+  height: 70px;
+  justify-self: start;
+  align-self: end;
+}
+
+#fimg4 {
+  width: 120px;
+  height: 105px;
+  justify-self: end;
+}
+
+#fimg5 {
+  width: 110px;
+  height: 110px;
+}
+
+#fimg6 {
+  width: 125px;
+  height: 110px;
+  justify-self: start;
+  align-self: end;
+}
+
+#fimg7 {
+  width: 80px;
+  height: 125px;
+  justify-self: end;
+  align-self: end;
+}
+
+#fimg8 {
+  width: 110px;
+  height: 95px;
+  align-self: start;
+}
+
+/* billeder bag teskt slut */
+
+/* mediaqueary */
+
+@media (min-width: 800px) {
+  .grid_b {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 10px 10% 10px -5%;
+  }
+
+  .grid_bild {
+    grid-row: 1/2;
+    grid-column: 1/2;
+  }
+
+  #rundtekst {
+    grid-column: 1 /2;
+    grid-row: 1/2;
+    place-self: center;
+    z-index: 95;
+  }
+
+  .forsidelayout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 5vw;
+  }
+
+  .forsidelayout p {
+    padding-top: 30px;
+    max-width: none;
+  }
+}
+
+/* tekst ring */
+
+#curve {
+  fill: transparent;
+}
+
+.text {
+  fill: white;
+  letter-spacing: 2px;
+  font-family: "Palanquin Dark", serif;
+  color: white;
+  font-size: 35px;
+  font-weight: 800;
+  transform-origin: 50% 50%;
+  animation: rotate 60s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
