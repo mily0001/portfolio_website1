@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+#portrat {
+  width: 200px;
+  margin: auto;
+}
+
+.leftcol h2 {
+  margin-bottom: 3vw;
+}
+
+.leftcol p {
+  text-align: left;
+}
+
+.kompetencer img {
+  width: 50px;
+  height: auto;
+}
+
+.kompetencer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 25px;
+  margin: 40px;
+  margin-bottom: 100px;
+}
+
+#figma {
+  height: 50px;
+  width: auto;
+  margin-left: 10px;
+}
+
+.skrift {
+  font-family: "Roboto Slab", serif;
+  color: white;
+  margin-bottom: 5px;
+  margin-left: 60px;
+  max-width: 80%;
+}
+
+.leftcol ul {
+  margin-bottom: 80px;
+}
+
+.arstal {
+  font-family: "Palanquin Dark", serif;
+  color: white;
+  list-style-type: none;
+  margin-left: 40px;
+  font-size: 5vw;
+}
+
+@media (min-width: 800px) {
+  .ommigcol {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+
+  #portrat {
+    margin-top: 10vw;
+  }
+
+  .rightcol {
+    border-left: 2px solid white;
+    margin-top: 10vw;
+  }
+
+  .rightcol footer {
+    margin-top: 270%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  hr {
+    display: none;
+  }
+}
