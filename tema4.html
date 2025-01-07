@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grundlæggende animation</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Nerko+One&family=Palanquin+Dark:wght@400;500;600;700&family=Passion+One:wght@400;700;900&display=swap" rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Nerko+One&family=Palanquin+Dark:wght@400;500;600;700&family=Passion+One:wght@400;700;900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/tema.css" />
+
+    <link rel="icon" href="img/logo.svg" type="favicon" />
+  </head>
+  <body>
+    <header>
+      <!-- menu -->
+      <div class="logo">
+        <a href="index.html">
+          <img src="img/logo.svg" alt="LOGO" style="width: 60px; height: 60px" />
+        </a>
+      </div>
+      <nav>
+        <ul class="menu">
+          <li><a href="index.html">hjem.</a></li>
+          <li><a href="portfolio.html">portfolio.</a></li>
+          <li><a href="ommig.html">om mig.</a></li>
+        </ul>
+        <div class="burger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+      </nav>
+      <!-- menu -->
+    </header>
+    <main>
+      <div class="temab" id="tema4farve">
+        <a class="temaba" href="portfolio.html">
+          <img src="img/ud.svg" alt="ud" id="ud" />
+          <p class="tilbageknap">tilbage til temaer</p>
+        </a>
+        <div class="toverskrift">
+          <div class="tematal">
+            <h1>04</h1>
+          </div>
+          <div class="temaskrift">
+            <h3 id="tema2o">Grundlæggende animation</h3>
+          </div>
+        </div>
+        <p>
+          I tema 4 bliver vi introduceret til JavaScript og dets formål. Det skal bruges i sammenhæng med CSS-animationer til at lave et spil, der har koncept efter eget ønske og idéer. Ligeledes introduceres vi til Adobe Illustrator, der gør det nemt at lave grafiske elementer på et professionelt plan. Yderligere forstås sammenhængen med brugertests og brugeroplevelse i denne sammenhæng, hvor det netop er vigtigt, at brugeren er engageret. Heri introduceres aktivitets- og statemachine-diagrammerne, der gør det nemt at planlægge spillet og dets funktioner. En lille introduktion til Audition i sammenhæng med spilanimationslyde. I sammenhæng med dette emne tages fat i det udbredte værktøj Git, der gør det nemt og overskueligt at gemme og trække kode frem i forskellige trin af
+          kodningsprocessen.
+        </p>
+        <div class="solution">
+          <p>Opgaven 04.04.01 Temaopgave</p>
+          <p>Opgaven skulle afleveres med et interaktivt spil med eget design og programmering. Derudover skal det indeholde 4 andre sider med dokumentation og nærmere forklaring. Det skal være responsivt og virke på både mobil og desktop. Spillet skal som udgangspunkt være et klikspil med ting, der bevæger sig over skærmen, men uden at kollidere. Yderligere skal vindertilstanden være baseret på point, der afhænger af dårlige og gode klikbare ting. Det resulterer i enten "Level Complete" eller "Game Over". I nærmere forklaring indsættes grafik, assets og teknik, også med en forside til introduktion af spillet. Opgaven skulle også bruges til at afprøve Git og dens praktiske funktioner.</p>
+          <p>Min løsning:</p>
+          <p>I tema 4 fik jeg skabt et spil, jeg selv synes er veludviklet og har et sjovt koncept. Spillet er baseret på drikkevarer, man bestiller i baren. Her er formålet at klikke på de "gode" ting, altså drinks, fremfor de "dårlige" ting, øl. Hvis ikke spilleren når at fange alle drinks, er det en direkte "Game Over"-spil. Med Adobe Illustrator fik jeg fremstillet alle mine spilelementer, heri baggrundsskærm, klikbare ting, pointboard og tid. Figma blev brugt til brainstorming og skitsering. Heri blev det funktionelt med JavaScript-kode. Alt omtanke og planlægning blev lagt ind på de tilhørende informationssider på sitet. Da afleveringen skete i del-versioner, blev Git gemt imellem hver aflevering.</p>
+        </div>
+        <p>I sammenhæng med introduktionen til Adobe Illustrator foregik meget af arbejdet derinde. Alt det grafiske og alt forarbejdet til det skulle igennem Illustrator, der tog meget af tiden. Det grafiske tog inspiration fra skitser og anden inspiration. Med alt det grafiske færdigt, kunne kodningsdelen begynde. Alle spilelementer blev indsat med en div omkring, hvori den indeholdte div’en med spilelementet, som var en central del af arbejdet, i hvilke elementer der skulle kodes for og ikke. Heraf kunne spillet gøres spilbart, og CSS-animation kunne i sammenhæng med JavaScript danne et endeligt spil. Spillets kodning blev afleveret i versionsdele og fik derfor 8 stk. git-commit.</p>
+        <p>I eget valgfrie spilkoncept fik jeg tilføjet mit eget design i drinks-elementer og grafik. Fra et simpelt spil og egne spiloplevelser kunne jeg danne min egen idé til et spil, jeg kunne fremstille. Heraf er både mine skitser og idéer fra Figma taget igennem Adobe og danner spillets rammer og udseende.</p>
+        <p>De vigtigste færdigheder, jeg tog med fra tema 4:</p>
+        <ul>
+          <li>Færdigheder i sammenhæng med programmet Illustrator i Adobe, heri vektor-tool og modellering af det.</li>
+          <li>Git og dets funktion i kodningsprocessen, heraf hvordan man vender tilbage i nødvendige dele.</li>
+          <li>JavaScript og sammenspil med CSS og animation. JavaScripts komponenter, heri variable, konstanter, add- og remove class, events, if-else og math.random.</li>
+          <li>Aktivitets- og statemachine-diagrammer, der giver det bedste overblik ved spiludvikling og JavaScript.</li>
+          <li>Audition og lydredigering.</li>
+        </ul>
+        <p>I tema 4 forstod jeg i langt større grad JavaScript og dets formål til dynamisk kodning. Det gjorde mig sikrere i dynamisk kodning og gav et bedre overblik til fremtidige projekter, også i sammenhæng med aktivitets- og statemachine-diagrammerne. Her føler jeg mig en del mere informeret. Git blev en del af kodningsprocessen, som også vil være en fordel til fremtidige professionelle samarbejder. Adobe Illustrator gav flere muligheder til grafisk udvikling og derfor bedre overblik til designprocesserne.</p>
+        <a class="hjemmsiden" href="http://mayamaya.dk/kea/04_animation/website/spil.html">Gå til hjemmesiden -></a>
+        <p class="linktekst">http://mayamaya.dk/kea/04_animation/website/spil.html</p>
+        <a class="hjemmsiden" href="https://www.figma.com/design/Sb9V2vVSI9FLKhYIHBnSdj/Spil-udvikling?node-id=0-1&t=Vg8WFSqqvGnNQQEy-1">Gå til Figma -></a>
+      </div>
+      <div class="scrollimg">
+        <img src="img/4forside_resultat.webp" alt="forside" />
+        <img src="img/4assets_resultat.webp" alt="assets" />
+        <img src="img/4grafik_resultat.webp" alt="grafik" />
+        <img src="img/4teknik_resultat.webp" alt="teknik" />
+        <img src="img/4spil_resultat.webp" alt="spil" />
+        <img src="img/4skitser_resultat.webp" alt="skitser" />
+        <img src="img/4howto_resultat.webp" alt="howto" />
+        <img src="img/4spilskrærm_resultat.webp" alt="spilskærm" />
+        <img src="img/4gameover_resultat.webp" alt="gameover" />
+      </div>
+      <div class="mobildesk">
+        <div class="col">
+          <img src="img/4statemachine_resultat.webp" alt="animation" />
+          <p>I tema 4 blev vi introduceret til aktivitets- og statemachine-diagrammer, der giver et bedre overblik over JavaScript-processen. Her vises diverse funktioner, der koder for spillets gang. Statemachine-diagrammet har en start og slut med prik, delvist fyldt; heri kan der også være forskellige udfald. Med spiller i tema 4 var det fælles for alle, at der var ”gode” og ”dårlige” ting at trykke på, og derfor er der to forskellige click-veje at gå.</p>
+        </div>
+        <div class="col1">
+          <img src="img/4animation_resultat.webp" alt="placeholder" />
+          <p class="order">Til diverse knapper i spillet er der blevet tildelt en animation, der gør det indbydende at trykke på, som f.eks. startknappen og "start spil igen". Animationen laves med CSS og tager fat i keyframes, der forekommer alt efter, hvad tiden på animationen er sat til. Alle knapper er derfor blot blevet tilføjet klassen .pulse, som er defineret i CSS.</p>
+        </div>
+      </div>
+      <a class="ntema" href="tema5.html">Gå til næste tema -></a>
+    </main>
+    <footer>
+      <hr />
+      <div class="linksf">
+        <a href="https://github.com/mily0001">
+          <img src="img/github-mark.svg" alt="Github" />
+        </a>
+        <a href="mailto:mily0001@stud.kea.dk">
+          <img src="img/email.svg" alt="email" />
+        </a>
+        <a href="tel:+4542434790">
+          <img src="img/phone-circle-fill.svg" alt="phone" />
+        </a>
+        <a href="https://www.facebook.com/miamaya.lyberth?locale=da_DK">
+          <img src="img/Facebook.svg" alt="Facebook" />
+        </a>
+        <a href="https://www.linkedin.com/learning/career-journey?u=36836804">
+          <img src="img/Linkedin.svg" alt="Linkedin" />
+        </a>
+      </div>
+    </footer>
+    <script src="menu.js"></script>
+  </body>
+</html>
