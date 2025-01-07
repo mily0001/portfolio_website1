@@ -13,6 +13,7 @@ img {
 #portrat {
   width: 200px;
   margin: auto;
+  border-radius: 5px;
 }
 
 .leftcol h2 {
