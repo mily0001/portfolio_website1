@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.tema {
+  margin: auto;
+  width: 75vw;
+  height: 42vw;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  border: 3px solid white;
+  border-radius: 15px;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  max-width: 1000px;
+}
+
+#tema2 {
+  background-color: #81c0fe;
+}
+
+#tema3 {
+  background-color: #5dbfdd;
+}
+
+#tema4 {
+  background-color: #1f38b5;
+}
+
+#tema5 {
+  background-color: #051a80;
+}
+
+.tematal p {
+  font-family: "Palanquin Dark", serif;
+  color: white;
+  font-size: 3.8vw;
+  margin: 0px;
+  margin-top: 10px;
+  margin-left: 20px;
+  text-transform: uppercase;
+}
+
+.tematal p:hover {
+  color: #7ddaff;
+}
+
+#temabillede2 {
+  background-image: url(../img/web.webp);
+  background-size: cover;
+  border: 2px solid white;
+  border-radius: 15px;
+  display: grid;
+  align-items: end;
+  margin: 10px;
+}
+
+#temabillede3 {
+  background-image: url(../img/uxui.webp);
+  background-size: cover;
+  border: 2px solid white;
+  border-radius: 15px;
+  display: grid;
+  align-items: end;
+  margin: 10px;
+}
+
+#temabillede4 {
+  background-image: url(../img/animation.webp);
+  background-size: cover;
+  background-position: center;
+  border: 2px solid white;
+  border-radius: 15px;
+  display: grid;
+  align-items: end;
+  margin: 10px;
+}
+
+#temabillede5 {
+  background-image: url(../img/indhold.webp);
+  /* opacity: 0.7; */
+  background-size: contain;
+  border: 2px solid white;
+  border-radius: 15px;
+  display: grid;
+  align-items: end;
+  margin: 10px;
+}
+
+.tematekst {
+  background-color: rgba(255, 255, 255, 0.9);
+  height: 15%;
+  border: solid 2px white;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: all 0.5s;
+  margin: 0 2px 0 2px;
+}
+
+.tematekst:hover {
+  height: 85%;
+}
+
+.tematekst p {
+  margin-left: 10px;
+  margin-top: -32px;
+  font-size: 1.8vw;
+  color: black;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+.mainlink {
+  text-decoration: none;
+}
+
+.temaoverskrift img {
+  width: 4vw;
+  margin-top: 1vw;
+  padding-right: 1vw;
+}
+
+.temaoverskrift {
+  display: grid;
+  grid-template-columns: 8fr 0.5fr;
+}
