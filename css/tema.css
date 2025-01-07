@@ -1,0 +1,209 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+#ud {
+  width: 10px;
+  margin-top: 55px;
+  margin-left: 50px;
+}
+
+.tilbageknap {
+  margin-top: -22px;
+  margin-left: 65px;
+  font-family: "Palanquin Dark", serif;
+}
+
+#tema2o {
+  font-size: 4vw;
+  margin-top: 8vw;
+  text-shadow: none;
+}
+
+.temab {
+  border: 2px solid white;
+  border-radius: 15px;
+  max-width: 1200px;
+  margin: 15px;
+  padding-bottom: 50px;
+}
+
+.temab p {
+  text-align: left;
+}
+
+.temab li {
+  list-style-type: disc;
+  margin-bottom: 12px;
+}
+
+.temab ul {
+  margin-top: -30px;
+  margin-bottom: 40px;
+  margin-left: 50px;
+  margin-right: 40px;
+  color: white;
+  font-family: "Roboto Slab", serif;
+  font-size: 15px;
+}
+
+/* .temab ul :last-child {
+    list-style-type: none;
+    padding-top: 40px;
+  } */
+
+.solution p {
+  margin: 15px;
+  margin-left: 40px;
+}
+
+.solution {
+  margin-bottom: 40px;
+}
+
+#tema2farve {
+  background-color: #81c0fe;
+}
+
+#tema3farve {
+  background-color: #5dbfdd;
+}
+
+#tema4farve {
+  background-color: #1f38b5;
+}
+
+#tema5farve {
+  background-color: #051a80;
+}
+
+.temaba {
+  text-decoration: none;
+  z-index: 500;
+}
+
+.toverskrift {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  place-items: center;
+  margin-top: -35px;
+  margin-bottom: 40px;
+}
+
+.scrollimg {
+  display: flex;
+  gap: 10px;
+  overflow: auto;
+  white-space: nowrap;
+  padding: 10px;
+  margin: 20px;
+  margin-bottom: 50px;
+}
+
+.scrollimg img {
+  height: 32vw;
+  width: auto;
+  border: solid 2px white;
+  border-radius: 5px;
+}
+
+.col img {
+  width: 40vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  min-width: 350px;
+  border-radius: 5px;
+}
+
+.col1 img {
+  width: 40vw;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+  max-width: 300px;
+  border-radius: 5px;
+}
+
+.col p,
+.order p {
+  width: auto;
+  place-items: center;
+  margin-top: 2vw;
+}
+
+.hjemmsiden,
+.hjemmsiden:visited {
+  color: white;
+  font-family: "Palanquin Dark", serif;
+  text-transform: uppercase;
+  font-size: 3vw;
+  margin-left: 40px;
+  text-decoration: underline;
+}
+
+.linktekst {
+  font-size: 9px;
+}
+
+.mobildesk {
+  margin-bottom: 100px;
+}
+
+.ntema,
+.ntema a:visited {
+  color: white;
+  font-family: "Palanquin Dark", serif;
+  margin-left: 40px;
+  font-style: oblique;
+  border: 2px solid white;
+  padding: 2px 7px 5px 7px;
+  border-radius: 10px;
+  font-size: 2vw;
+  text-decoration: none;
+}
+
+.nteam a:hover {
+  text-decoration: underline;
+}
+
+@media (min-width: 700px) {
+  .col {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .col1 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .col1 img {
+    justify-self: center;
+    align-self: center;
+  }
+
+  .col img {
+    margin-left: 6%;
+    justify-self: center;
+    align-self: center;
+  }
+
+  .order {
+    display: grid;
+    order: -1;
+    margin-top: 20px;
+  }
+
+  .col p {
+    padding-left: 10px;
+  }
+}
